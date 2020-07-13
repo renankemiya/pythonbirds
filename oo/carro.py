@@ -22,7 +22,7 @@ O   L
   S
 
     """
-import motor
+
 
 
 class Motor:
