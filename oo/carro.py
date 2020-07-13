@@ -42,6 +42,9 @@ class Motor:
             self.velocidade = 0
             return print(self.velocidade)
 
+    def calcular_velocidade(self):
+        return print(self.velocidade)
+
     '''
     >>> motor = Motor()
     >>> motor.velocidade
@@ -130,8 +133,6 @@ class Carro:
     def girar_a_esquerda(self):
         self.direcao.girar_a_esquerda()
 
-    def velocidade(self):
-        print(self.motor.velocidade)
 
 
 
@@ -165,7 +166,7 @@ class Carro:
 if __name__ == '__main__':
 
     carro = Carro(direcao=Direcao(), motor=Motor())
-    print(carro.motor.velocidade)
+    carro.motor.calcular_velocidade()
     carro.motor.acelerar()
     carro.motor.acelerar()
     carro.motor.acelerar()
