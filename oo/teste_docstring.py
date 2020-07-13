@@ -84,16 +84,16 @@ O   L
     0
 
     >>> carro.calcular_direcao()
-    >>> 'Norte'
+    'Norte'
     >>> carro.girar_a_direita()
     >>> carro.calcular_direcao()
-    >>> 'Leste'
+    'Leste'
     >>> carro.girar_a_esquerda()
     >>> carro.calcular_direcao()
-    >>> 'Norte'
+    'Norte'
     >>> carro.girar_a_esquerda()
     >>> carro.calcular_direcao()
-    >>> 'Oeste'
+    'Oeste'
 """
 
 
@@ -151,7 +151,7 @@ class Carro():
         self.motor.frear()
 
     def calcular_direcao(self):
-        return self.direcao
+        return self.direcao.valor
 
     def girar_a_direita(self):
         self.direcao.girar_a_direita()
