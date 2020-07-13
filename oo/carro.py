@@ -79,6 +79,9 @@ class Direcao:
         self.direcao = self.direcao_esquerda[self.direcao]
         return print(self.direcao)
 
+    def calcular_direcao(self):
+        return print(self.direcao)
+
     '''
     >>> direção = Direção()
     >>> direção.valor
@@ -132,6 +135,7 @@ class Carro:
 
 
 
+
 '''
     >>> carro = Carro(direção, motor)
     >>> carro.calcular_velocidade()
@@ -159,6 +163,23 @@ class Carro:
     >>> 'Oeste'
 '''
 if __name__ == '__main__':
-    motor =
+
     carro = Carro(direcao=Direcao(), motor=Motor())
-    print(carro.velocidade)
+    print(carro.motor.velocidade)
+    carro.motor.acelerar()
+    carro.motor.acelerar()
+    carro.motor.acelerar()
+    carro.motor.frear()
+    carro.motor.frear()
+
+    carro.direcao.calcular_direcao()
+    carro.direcao.girar_a_direita()
+    carro.direcao.girar_a_direita()
+    carro.direcao.girar_a_direita()
+    carro.direcao.girar_a_direita()
+    carro.direcao.girar_a_esquerda()
+    carro.direcao.girar_a_esquerda()
+    carro.direcao.girar_a_esquerda()
+    carro.direcao.girar_a_esquerda()
+
+
