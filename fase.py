@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from itertools import chain
-from atores import ATIVO
+
+from atores import ATIVO, Porco, Passaro, DESTRUIDO,
+
 
 
 VITORIA = 'VITORIA'
@@ -73,7 +75,19 @@ class Fase():
 
         :return:
         """
-        return EM_ANDAMENTO
+#        porcos = self._porcos
+        passaros = self._passaros
+
+        for passaro in passaros:
+            if passaro == ATIVO:
+                Print(1)
+                return EM_ANDAMENTO
+        else:
+            return VITORIA
+
+
+
+
 
     def lancar(self, angulo, tempo):
         """
